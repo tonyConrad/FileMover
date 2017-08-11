@@ -1,0 +1,125 @@
+﻿<Window x:Class="FileMover.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:FileMover" mc:Ignorable="d" ResizeMode="CanMinimize" Title="FileMover" Height="610.274" Width="903.288">
+
+    <Grid Margin="0,-27,0,0" Height="612" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Image Margin="146,100,691,452" Source="Image5.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="18.932" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Margin="131,209,705,339" Source="Image4.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="145.901" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <TextBox x:Name="folderOrigin_TextBox" HorizontalAlignment="Left" Height="42" Margin="29,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontFamily="Berlin Sans FB" />
+
+        <TextBox x:Name="destinationFolder_TextBox" HorizontalAlignment="Left" Height="42" Margin="33,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" FontFamily="Berlin Sans FB" />
+
+        <Button x:Name="moveFiles_Button" Content="Start Moving Files" HorizontalAlignment="Left" Margin="29,407,0,0" VerticalAlignment="Top" Width="143" Height="75" Click="moveFiles_Click" FontFamily="Berlin Sans FB" FontSize="18">
+            <Button.Background>
+                <SolidColorBrush Color="#FF00D66B" Opacity="0.25" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="folderWithFiles_Button" Content="Files/Folders &#xA;To Move" HorizontalAlignment="Left" Height="88" Margin="28,56,0,0" VerticalAlignment="Top" Width="135" Click="folderWithFiles_Button_Click" HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF85CCFD" Opacity="0.25" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="TestTwo_Button" Content="Test 2" HorizontalAlignment="Left" Height="27" Margin="739,29,0,0" VerticalAlignment="Top" Width="47" Click="SecondWord_Click" FontFamily="Berlin Sans FB" />
+
+        <Button x:Name="MoveToFolder_Button" Content="Folder to&#xA;Move Files&#xA;To" Height="88" Margin="32.986,232.068,0,0" VerticalAlignment="Top" Width="132" Click="MoveToFolder_Button_Click" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" HorizontalAlignment="Left" UseLayoutRounding="False" FontFamily="Berlin Sans FB" FontSize="16">
+            <Button.Background>
+                <SolidColorBrush Color="#FF85CCFD" Opacity="0.25" />
+            </Button.Background>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="-0.008" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <TextBox x:Name="fileName_TextBox" HorizontalAlignment="Left" Height="51" Margin="213,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="573" FontFamily="Berlin Sans FB" FontSize="20" IsEnabled="False" />
+
+        <Label x:Name="fileName_Label" Content="File/Folder Name:" HorizontalAlignment="Left" Height="41" Margin="214,48,0,0" VerticalAlignment="Top" Width="573" FontFamily="Berlin Sans FB" HorizontalContentAlignment="Center" FontSize="24" />
+
+        <Button x:Name="GetFilename_Button" Content="Get Filename" HorizontalAlignment="Left" Height="37" Margin="601,6,0,0" VerticalAlignment="Top" Width="115" Click="GetFilename_Button_Click" FontFamily="Berlin Sans FB" />
+
+        <Button x:Name="MoveFile_Button" Content="Move" HorizontalAlignment="Left" Margin="778,197,-1,0" VerticalAlignment="Top" Width="120" Click="MoveFile_Button_Click" FontFamily="Berlin Sans FB" Height="314" FontSize="20">
+
+            <Button.Background>
+                <SolidColorBrush Color="#FF00C359" Opacity="0.5" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="SkipFile_Button" Content="Skip" HorizontalAlignment="Left" Margin="791,524,0,0" VerticalAlignment="Top" Click="SkipFile_Button_Click" FontFamily="Berlin Sans FB" Width="103" Height="65" FontSize="20">
+
+            <Button.Background>
+                <SolidColorBrush Color="#FFFFDC00" Opacity="0.5" />
+            </Button.Background>
+
+        </Button>
+
+        <Button x:Name="StopMoving_Button" Content="Reset" HorizontalAlignment="Left" Margin="67,506,0,0" VerticalAlignment="Top" Width="75" Click="StopMoving_Button_Click" FontFamily="Berlin Sans FB" Height="50" FontSize="20">
+
+            <Button.Background>
+                <SolidColorBrush Color="Red" Opacity="0.5" />
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="createFolderConfirm_Button" Content="Create Folder" HorizontalAlignment="Left" Margin="475,524,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" Width="120" Height="40                 " FontSize="20" Click="createFolderConfirm_Button_Click">
+
+            <Button.Background>
+                <SolidColorBrush Color="#FF85C1EA" Opacity="0.5" />
+            </Button.Background>
+
+        </Button>
+
+        <TextBox x:Name="createFolder_TextBox" HorizontalAlignment="Left" Height="40                  " Margin="215,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Panel.ZIndex="-1" />
+
+        <DataGrid x:Name="moveTo_dataGrid" HorizontalAlignment="Left" Height="314" Margin="214,197,0,0" VerticalAlignment="Top" Width="573" MinWidth="300" MinHeight="100" CanUserReorderColumns="False" MinColumnWidth="286" AlternationCount="1" IsReadOnly="True" FontSize="24" Background="#FFEEF3FB">
+
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn x:Name="fileName" />
+                <DataGridTextColumn x:Name="filePath" />
+            </DataGrid.Columns>-->
+
+        </DataGrid>
+        <TextBox x:Name="filePath_TextBox" HorizontalAlignment="Left" Height="30" Margin="214,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="573" FontFamily="Berlin Sans FB" FontSize="12" />
+        <Button x:Name="search_Button" Content="Search" HorizontalAlignment="Left" Margin="791,95,0,0" VerticalAlignment="Top" Click="search_Button_Click" FontFamily="Berlin Sans FB" Width="103" Height="65" FontSize="20">
+
+            <Button.Background>
+                <SolidColorBrush Color="#FF007CFF" Opacity="0.5" />
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="ShowAllFiles_Button" Content="Show All Folders" HorizontalAlignment="Left" Margin="614,524,0,0" VerticalAlignment="Top" Click="ShowAllFiles_Button_Click" FontFamily="Berlin Sans FB" Width="158" Height="40" FontSize="20">
+
+            <Button.Background>
+                <SolidColorBrush Color="#FF6400FF" Opacity="0.5" />
+            </Button.Background>
+
+        </Button>
+
+    </Grid>
+</Window>
